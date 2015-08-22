@@ -1,7 +1,12 @@
 Elasticsearch
 =========
+Installs Elasticsearch on CentOS 7.
 
-Installs Elasticsearch
+Installation Instructions:
+------------
+
+To install this role:
+ansible-galaxy install bngsudheer.elasticsearch
 
 Requirements
 ------------
