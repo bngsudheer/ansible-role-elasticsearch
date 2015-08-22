@@ -1,0 +1,13 @@
+---
+# tasks file for elasticsearch
+ - name: import Elastic Search Repo key
+   action: rpm_key key=https://packages.elasticsearch.org/GPG-KEY-elasticsearch state=present
+
+ - name: Enable the elastic search repo
+   copy: src=elasticsearch.repo dest=/etc/yum.repos.d
+
+ - name: Install elastic search package
+   action: yum name=elasticsearch state=installed
+
+ - name: Setup Elastic search - enable elasticsearch
+   service: name=elasticsearch state=started enabled=yes

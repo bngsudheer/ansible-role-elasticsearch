@@ -1,25 +1,39 @@
-# elasticsearch
-Install Elasticsearch
+Elasticsearch
+=========
 
-`bngsudheer.elasticsearch` role allows you to install Elasticsearch
-on CentOS 7.
+Installs Elasticsearch
 
+Requirements
+------------
 
-### Installation
+Java Runtime Envorinment. If you want to install Java take a look at the role ansiblebit.oracle-java.
 
-This role requires at least Ansible `v1.7.0`. To install it, run:
+Role Variables
+--------------
 
-    ansible-galaxy install bngsudheer.elasticsearch
+No variable declaration required.
 
-### Documentation
-* Simple and fast Elastic Search
-* This role does not depend on any other roles
-* You need to have Java Runtime installed to run Elasticsearch
+Dependencies
+------------
 
+No dependencies.
 
-### Authors and license
+Example Playbook
+----------------
 
-`elasticsearch` role was written by:
-- Sudheer Satyanarayana | [e-mail](mailto:sudheer.zzz@sudheer.net) | [Twitter](https://twitter.com/bngsudheer) | [GitHub](https://github.com/bngsudheer)
+Example of how to use bngsudheer.elasticsearech:
 
-License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
+    - hosts: servers
+      roles:
+         - { role: bngsudheer.elasticsearch  }
+
+License
+-------
+
+BSD
+
+Author Information
+------------------
+Role written by Sudheer Satyanaraya. http://www.techchorus.net
+Twitter: http://www.twitter.com/bngsudheer
+
