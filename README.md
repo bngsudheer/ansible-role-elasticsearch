@@ -1,6 +1,6 @@
 Elasticsearch
 =========
-Installs Elasticsearch on CentOS 7.
+Installs Elasticsearch on CentOS 7. We will support other Linux distributions in future.
 
 Installation Instructions:
 ------------
